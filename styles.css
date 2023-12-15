@@ -40,3 +40,16 @@
   grid-row-start: 4;
   grid-row-end: 6;
 }
+
+.grid_container_one {
+  background-color: blue;
+  display: grid;
+  gap: 5px;
+  grid-template-areas: "myArea myArea myArea myArea myArea";
+  margin: 100px;
+  padding: 5px;
+}
+
+.uno {
+  grid-area: myArea;
+}
