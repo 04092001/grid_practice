@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.grid_container {
+  background-color: blue;
+  display: grid;
+  gap: 5px;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 100px;
+  padding: 5px;
+}
+
+.grid_child {
+  background-color: aqua;
+  border: 1px solid black;
+  font-size: 30px;
+  padding: 100px;
+  text-align: center;
+}
+
+.one {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+.two {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.five {
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+
+.six {
+  grid-row-start: 4;
+  grid-row-end: 6;
+}
