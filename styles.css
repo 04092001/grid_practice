@@ -5,20 +5,24 @@
 }
 
 .grid_container {
-  background-color: blue;
+  background-color: #ffc659;
   display: grid;
   gap: 5px;
   grid-template-columns: 1fr 1fr 1fr;
   margin: 100px;
   padding: 5px;
+  width: 100%;
 }
 
 .grid_child {
-  background-color: aqua;
-  border: 1px solid black;
+  align-items: center;
+  background-color: #6cabdd;
+  border: 1px;
+  color: #ffffff;
+  display: flex;
   font-size: 30px;
+  justify-content: center;
   padding: 100px;
-  text-align: center;
 }
 
 .one {
@@ -42,7 +46,7 @@
 }
 
 .grid_container_one {
-  background-color: blue;
+  background-color: #ffc659;
   display: grid;
   gap: 5px;
   grid-template-areas: "myArea myArea myArea myArea myArea";
@@ -50,6 +54,75 @@
   padding: 5px;
 }
 
-.uno {
+.unos {
   grid-area: myArea;
+}
+
+.grid_container_two {
+  background-color: #ffc659;
+  display: grid;
+  gap: 5px;
+  grid-template-areas: "myArea myArea . . .";
+  margin: 100px;
+  padding: 5px;
+}
+
+.grid_container_three {
+  background-color: #ffc659;
+  display: grid;
+  gap: 5px;
+  grid-template-areas: "myArea myArea . . ." "myArea myArea . . .";
+  margin: 100px;
+  padding: 5px;
+}
+
+.eins {
+  grid-area: header;
+}
+.zwei {
+  grid-area: menu;
+}
+.drei {
+  height: 1000px;
+  grid-area: main;
+}
+.vier {
+  grid-area: right;
+}
+.funf {
+  grid-area: footer;
+}
+
+.grid_container_five {
+  background-color: #ffc659;
+  display: grid;
+  gap: 5px;
+  grid-template-columns: auto auto auto auto auto;
+  margin: 100px;
+  padding: 5px;
+}
+
+.otto {
+  grid-area: 2 / 2 / 9 / 5;
+}
+
+.grid_container_six {
+  background-color: #ffc659;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin: 20px;
+  padding: 5px;
+}
+
+@media screen and (min-width: 800px) {
+  .grid_container_six {
+    background-color: #ffc659;
+    display: grid;
+    gap: 5px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "header header header" "left main right" "left footer footer";
+    margin: 100px;
+    padding: 5px;
+  }
 }
