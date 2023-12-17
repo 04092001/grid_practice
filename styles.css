@@ -150,6 +150,15 @@
   grid-area: footer;
 }
 
+.grid_container_seven {
+  background-color: #ffc659;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin: 20px;
+  padding: 5px;
+}
+
 @media screen and (min-width: 850px) {
   .grid_container_six {
     display: grid;
@@ -162,6 +171,14 @@
 
   .third {
     min-height: 500px;
+  }
+
+  .grid_container_seven {
+    display: grid;
+    gap: 5px;
+    grid-template-columns: 200px 200px minmax(400px, auto);
+    margin: 100px;
+    padding: 5px;
   }
 }
 
